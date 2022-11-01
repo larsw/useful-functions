@@ -8,11 +8,13 @@
         <version>2.7.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>cloud-streaming</artifactId>
+    <groupId>org.sral.functions</groupId>
+    <artifactId>useful-functions</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-streaming</name>
-    <description>cloud-streaming</description>
+    <name>Useful Functions as a Service</name>
+
+    <description>A small PoC showing the usage of Spring Cloud Function/Stream</description>
+
     <properties>
         <java.version>17</java.version>
         <kotlin.version>1.6.21</kotlin.version>
