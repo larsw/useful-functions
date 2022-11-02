@@ -15,6 +15,7 @@ mvn spring-boot:run
 ```
 
 ```shell
-curl -v -F body=@for_ocr.png -H "X-ocr-file-type: png" -H "X-ocr-language: nor" http://localhost:8080/functions/ocr
+curl -v -F body=@for_ocr.png -H "X-ocr-file-type: png" -H "X-ocr-language: nor" http://localhost:8080/functions/ocr | jq -r ".[0]"
 # -> will output the OCR'ed text directly.
 ```
+

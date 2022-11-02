@@ -6,7 +6,9 @@ import org.springframework.stereotype.Component
 @Component
 @ConfigurationProperties(prefix = "sral.functions.ocr")
 class Configuration {
+    var debugFile: String = "/dev/null"
     var tesseractDataPath: String = "/usr/share/tesseract-ocr/4.00/tessdata"
     var defaultLanguage: String = "eng"
     var defaultFileType: String = "pdf"
+    var defaultResolution: Int = 300
 }
